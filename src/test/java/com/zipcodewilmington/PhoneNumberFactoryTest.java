@@ -31,7 +31,7 @@ public class PhoneNumberFactoryTest {
         PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
 
         // : Then
-        Assert.assertEquals(null, phoneNumber);
+        Assert.assertEquals("(000)-000-0000", phoneNumber.toString());
     }
 
     @Test
